@@ -60,6 +60,7 @@ namespace API
 
 
             // For Security Headers
+            app.UseXContentTypeOptions();
             app.UseReferrerPolicy(opt => opt.NoReferrer());
             app.UseXXssProtection(opt => opt.EnabledWithBlockMode());
             app.UseXfo(opt => opt.Deny());
@@ -72,14 +73,13 @@ namespace API
             .ImageSources(s => s.Self().CustomSources("https://res.cloudinary.com"))
             .ScriptSources(s => s.Self().CustomSources("sha256-HIgflxNtM43xg36bBIUoPTUuo+CXZ319LsTVRtsZ/VU="))
             );
-
             if (env.IsDevelopment())
             {
                 // app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPIv5 v1"));
             }
-             else
+            else
             {
                 app.Use(async (context, next) =>
                 {
