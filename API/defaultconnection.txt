@@ -1,1 +1,7 @@
- "DefaultConnection" : "Data source=projectreact.db"
+"DefaultConnection" : "Data source=projectreact.db"
+
+security:
+git add .
+git commit -m "Security headers added" 
+git push heroku main 
+

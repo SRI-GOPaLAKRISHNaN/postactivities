@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "@types/facebook-js-sdk": "^3.3.2",
     "@types/jest": "^27.4.0",
     "@types/node": "^16.11.21",
     "@types/react": "^17.0.38",
@@ -42,7 +43,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild":"move build ../API/wwwroot",
+    "postbuild": "rimraf ../API/wwwroot && move build ../API/wwwroot",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -68,6 +69,7 @@
     "@types/date-fns": "^2.6.0",
     "@types/react-datepicker": "^4.3.4",
     "@types/react-router-dom": "^5.3.3",
-    "@types/uuid": "^8.3.0"
+    "@types/uuid": "^8.3.0",
+    "rimraf": "^2.6.3"
   }
 }
