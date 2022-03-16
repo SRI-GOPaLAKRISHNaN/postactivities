@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(43, 42, 83);
+}
+
+.ui.inverted.top.fixed.menu {
+  background-image: linear-gradient(
+    136deg,
+    rgb(143, 7, 255),
+    rgb(8, 255, 222),
+    rgb(143, 7, 255)
+  ) !important;
+}
+
+.react-calendar {
+  width: 100%;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+/* .react-datepicker {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  padding: 16px;
+} */
+/* .react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list {
+  padding: 16px;
+} */
+
+/*home page styles*/
+
+.banner {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    135deg,
+    rgb(32, 167, 172) 0%,
+    rgb(88, 21, 151) 69%,
+    rgb(32, 167, 172) 89%
+  ) !important;
+  height: 100vh;
+}
+
+.banner .ui.menu .ui.button,
+.ui.menu a.ui.inverted.button {
+  margin-left: 0.5em;
+}
+
+.banner h1.ui.header {
+  font-size: 4em;
+  font-weight: normal;
+}
+
+.banner h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+}
+
+/*end home page styles*/
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

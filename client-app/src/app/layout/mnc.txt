@@ -1,0 +1,8 @@
+{
+  /* <Header as='h2' icon='users' content='ProjectReact' /> */
+}
+{
+  /* {companies.map(company => (
+          <Mnc company={company} key={company.name}/>
+        ))} */
+}
