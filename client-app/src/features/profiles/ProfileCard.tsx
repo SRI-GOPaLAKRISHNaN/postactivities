@@ -19,7 +19,7 @@ export default observer(function ProfileCard({ profile }: Props) {
 
   return (
     <Card
-      style={{ width: "13rem" }}
+      style={{ width: "15rem" }}
       as={Link}
       to={`/profiles/${profile.username}`}
     >
