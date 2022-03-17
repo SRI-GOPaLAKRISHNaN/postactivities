@@ -64,6 +64,7 @@ namespace API
             app.UseReferrerPolicy(opt => opt.NoReferrer());
             app.UseXXssProtection(opt => opt.EnabledWithBlockMode());
             app.UseXfo(opt => opt.Deny());
+            app.UseCsp(opt => opt .BlockAllMixedContent());
             app.UseCspReportOnly(opt => opt
                 .BlockAllMixedContent()
                 .StyleSources(s => s.Self().CustomSources("https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin",
@@ -83,6 +84,7 @@ namespace API
                     ))
                 .ScriptSources(s => s.Self()
                     .CustomSources(
+                        "unsafe-inline",
                        "sha256-HIgflxNtM43xg36bBIUoPTUuo+CXZ319LsTVRtsZ/VU=",
                         "https://connect.facebook.net",
                         "sha256-3x3EykMfFJtFd84iFKuZG0MoGAo5XdRfl3rq3r//ydA=",
